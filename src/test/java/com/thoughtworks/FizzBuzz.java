@@ -2,21 +2,15 @@ package com.thoughtworks;
 
 public class FizzBuzz {
     public String say(int s) {
-        if(String.valueOf(s).contains("3"))
-            return "Fizz";
 
-        if (s%3 == 0 && s%5 == 0)
-        {
-         return "FizzBuzz";
-        }else if (s%3 == 0)
-        {
+        if(String.valueOf(s).contains("3")){
             return "Fizz";
-        }else if (s%5 == 0)
-        {
+        }else if (s%3 == 0 && s%5 == 0) {
+            return "FizzBuzz";
+        }else if (s%3 == 0) {
+            return "Fizz";
+        }else if (s%5 == 0) {
             return "Buzz";
-        }else if (String.valueOf(s).contains("3"))
-        {
-            return "Fizz";
         }
         return String.valueOf(s);
     }
