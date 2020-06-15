@@ -131,7 +131,7 @@ public class HelloWorldTest {
         //when
         String result = fizzBuzz.say(105);
         //then
-        assertEquals(result, "FizzBuzzWhizz");
+        assertEquals(result, "BuzzWhizz");
     }
 
     @Test
