@@ -5,8 +5,10 @@ public class FizzBuzz {
 
         if(String.valueOf(s).contains("7") && s%3 == 0){
             return "Fizz";
-        }else if(String.valueOf(s).contains("5") && s%5 == 0 && s%7 == 0 ){
+        }else if(String.valueOf(s).contains("5") && s%5 == 0 && s%7 == 0){
             return "BuzzWhizz";
+        }else if(String.valueOf(s).contains("5") && s%3 == 0){
+            return String.valueOf(s);
         }else if (String.valueOf(s).contains("3")) {
             return "Fizz";
         }

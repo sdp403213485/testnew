@@ -101,7 +101,7 @@ public class FizzBuzzTest {
         //when
         String result = fizzBuzz.say(105);
         //then
-        assertEquals(result, "FizzBuzzWhizz");
+        assertEquals(result, "BuzzWhizz");
     }
 
     @Test
@@ -122,5 +122,6 @@ public class FizzBuzzTest {
         //then
         assertEquals(result, "Fizz");
     }
+
 
 }
