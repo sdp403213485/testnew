@@ -84,4 +84,14 @@ public class HelloWorldTest {
         assertEquals(result, "Fizz");
     }
 
+    @Test
+    public void should_return_30(){
+        //given
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        //when
+        String result = fizzBuzz.say(30);
+        //thens
+        assertEquals(result, "Fizz");
+    }
+
 }
