@@ -11,6 +11,9 @@ public class FizzBuzz {
         }else if (s%5 == 0)
         {
             return "Buzz";
+        }else if (String.valueOf(s).contains("3"))
+        {
+            return "Fizz";
         }
         return String.valueOf(s);
     }
