@@ -134,4 +134,13 @@ public class HelloWorldTest {
         assertEquals(result, "FizzBuzzWhizz");
     }
 
+    @Test
+    public void should_return_70(){
+        //given
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        //when
+        String result = fizzBuzz.say(70);
+        //then
+        assertEquals(result, "BuzzWhizz");
+    }
 }
