@@ -70,7 +70,7 @@ public class HelloWorldTest {
         FizzBuzz fizzBuzz = new FizzBuzz();
         //when
         String result = fizzBuzz.say(15);
-        //thens
+        //then
         assertEquals(result, "FizzBuzz");
     }
 
@@ -80,7 +80,7 @@ public class HelloWorldTest {
         FizzBuzz fizzBuzz = new FizzBuzz();
         //when
         String result = fizzBuzz.say(13);
-        //thens
+        //then
         assertEquals(result, "Fizz");
     }
 
@@ -90,8 +90,48 @@ public class HelloWorldTest {
         FizzBuzz fizzBuzz = new FizzBuzz();
         //when
         String result = fizzBuzz.say(30);
-        //thens
+        //then
         assertEquals(result, "Fizz");
+    }
+
+    @Test
+    public void should_return_7(){
+        //given
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        //when
+        String result = fizzBuzz.say(7);
+        //then
+        assertEquals(result, "Whizz");
+    }
+
+    @Test
+    public void should_return_21(){
+        //given
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        //when
+        String result = fizzBuzz.say(21);
+        //then
+        assertEquals(result, "FizzWhizz");
+    }
+
+    @Test
+    public void should_return_35(){
+        //given
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        //when
+        String result = fizzBuzz.say(35);
+        //then
+        assertEquals(result, "Fizz");
+    }
+
+    @Test
+    public void should_return_105(){
+        //given
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        //when
+        String result = fizzBuzz.say(105);
+        //then
+        assertEquals(result, "FizzBuzzWhizz");
     }
 
 }
